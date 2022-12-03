@@ -166,3 +166,55 @@ text-align: center;
     color: white;
     margin-right: 10px;
 }
+
+/*---------------
+ Media Quarries 
+ ---------------*/
+ /*-----------------
+  Mobile devices
+  --------------- */
+  @media only screen and (max-width:688px){
+    .container{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .Popular-collection{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .banner{
+        flex-direction: column;
+        width: 80%;
+        justify-content: center;
+        align-items: center;
+        margin: 0px;
+        padding: 0px;
+        
+    }
+    .e-commerce{
+        flex-direction: column;
+    }
+
+  }
+
+  /*--------
+   tablet devices
+  ---------- */
+  @media only screen and (min-width:689px) and (max-width:992px) {
+    .container{
+        width: 100%;
+    }
+    .Popular-collection{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .banner{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        margin: 0px;
+        padding: 30px;
+        
+    }
+    .e-commerce{
+        flex-direction: column;
+    }
+  }
